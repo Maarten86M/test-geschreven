@@ -1,3 +1,6 @@
+// importeren van de functies uit het index.js bestand.
+const { add, makePersonObject } = require('../index');
+
 // test nummer 1
 
 test('the add() function takes two numbers and sums them together',function (){
@@ -14,18 +17,10 @@ test('the add() function takes two numbers and sums them together',function (){
 
 });
 
-function add(a, b) {
-    return a + b;
-}
 
 // test nummer 2
 
-function makePersonObject(firstname, age) {
-    return{
-        name: firstname,
-        age: age,
-    }
-}
+
 
 test('de makePersonObject() functie maakt een persoon object met de waardes die hij meekrijgt',function (){
     // zet alle data klaar
